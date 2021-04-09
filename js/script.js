@@ -45,14 +45,42 @@ $(document).ready(function () {
     $("form").submit(function (event) {
         event.preventDefault();
 
+        function toppingsToDisplay() {
+            let toppingsArray = []
+            if ($("#mushrooms").is(":checked")) {
+                toppingsArray.push($("#mushrooms").val());
+            }
+            if ($("#olives").is(":checked")) {
+                toppingsArray.push($("#olives").val());
+            }
+            if ($("#onions").is(":checked")) {
+                toppingsArray.push($("#onions").val());
+            }
+            if ($("#pepperoni").is(":checked")) {
+                toppingsArray.push($("#pepperoni").val());
+            }
+            if ($("#pineapple").is(":checked")) {
+                toppingsArray.push($("#pineapple").val());
+            }
+            if ($("#sausage").is(":checked")) {
+                toppingsArray.push($("#sausage").val());
+            }
+            if ($("#bell-peppers").is(":checked")) {
+                toppingsArray.push($("#bell-peppers").val());
+            }
+            if ($("#anchovies").is(":checked")) {
+                toppingsArray.push($("#anchovies").val());
+            } return toppingsArray;
+        };
+
         const pizzaSizeOrder = parseFloat($("#pizza-size").val());
         const pizzaStyleOrder = parseFloat($("#pizza-style").val());
-        const pizzaToppingOrder = $("#mushrooms").is(":checked");
         const baptismDiscountOrder = $("#baptism").is(":checked");
-        let fullPrice = new PizzaOrder(pizzaSizeOrder, pizzaStyleOrder, pizzaToppingOrder, baptismDiscountOrder);
+
+        let fullPrice = new PizzaOrder(pizzaSizeOrder, pizzaStyleOrder, toppingsToDisplay(), baptismDiscountOrder);
         const convertPrice = fullPrice.pizzaPrice().toFixed(2);
 
-        console.log(fullPrice)
+        console.log(fullPrice, toppingsToDisplay())
 
         $("#final-order").text(`Your final price is: $${convertPrice}`);
     });
