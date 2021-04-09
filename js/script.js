@@ -1,3 +1,5 @@
+//utilty logic----------------------------------------------------------------------------
+
 // busines logic--------------------------------------------------------------------------
 
 function PizzaOrder(pizzaSize, pizzaStyle, pizzaToppings, baptismDiscount) {
@@ -37,14 +39,16 @@ PizzaOrder.prototype.pizzaPrice = function () {
         price *= .90
     }
     return price;
-}
+};
+
+
+
 
 //user logic------------------------------------------------------------------------------
 
 $(document).ready(function () {
     $("form").submit(function (event) {
         event.preventDefault();
-
         function toppingsToDisplay() {
             let toppingsArray = []
             if ($("#mushrooms").is(":checked")) {
@@ -85,11 +89,18 @@ $(document).ready(function () {
         $("#final-order").text(`$${convertPrice}`);
         $("#final-container").slideDown();
 
-        $("#change-order, #checkout").click(function (event) {
+        $("#change-order").click(function (event) {
             event.preventDefault();
 
             $("#final-container").slideUp();
-        })
+        });
+        $("#checkout").click(function (event) {
+            event.preventDefault();
 
+            $("#checkout-container").show();
+            $("#final-container").slideUp();
+            $("#order-page").slideUp();
+
+        });
     });
 });

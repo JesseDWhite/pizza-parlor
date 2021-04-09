@@ -27,7 +27,7 @@ body {
     font-size: 35px;
     color: rgb(2, 185, 2);
 }
-#final-container {
+#final-container, #checkout-container{
     display: none;
 }
 header {
@@ -40,6 +40,8 @@ h1 {
     font-family: 'Amatic SC', cursive;
     font-size: 75px;
 }
-
+#checkout-container {
+    text-align: center;
+}
 
 
