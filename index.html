@@ -16,11 +16,13 @@
 </head>
 
 <body>
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <header>
+        <h1>Cheesus Crust Pizzeria and Baptism Clinic</h1>
+        <h3><em>"It's the yeast we could do."</em></h3>
+    </header>
+    <div id="carousel" class="carousel slide mb-2" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-caption">
-                <h1>Cheessus Crust Pizzeria and Baptism Clinic</h1>
-                <h3><em>"It's the yeast we could do."</em></h3>
             </div>
             <div class="carousel-item active">
                 <img src="/img/pizza-one.jpg" class="d-block w-100" alt="photo of a pizza">
@@ -33,23 +35,30 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <h1>Cheessus Crust Pizzeria and Baptism Clinic</h1>
-        <h3><em>"It's the yeast we could do."</em></h3>
+    <div class="container justify-content-between">
         <form>
             <div class="row">
-                <div class="card col-lg-3">
+                <div class="card" id="final-container">
                     <div class="card-body">
-                        <h5 class="card-title">Select pizza size</h5>
+                        <h5 class="card-title">Your Final Order Price Is</h5>
+                        <div class="card-content" id="final-order">
+
+                        </div>
+                        <button class="btn btn-danger col-12 mt-1" id="change-order">Change Order</button>
+                    </div>
+                </div>
+                <div class="card col-lg-3 mt-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Select the pizza size you would like</h5>
                         <select name="size" id="pizza-size" class="form-select">
-                            <option value="5.99">Small</option>
-                            <option value="10.99">Medium</option>
-                            <option value="18.99">Large</option>
+                            <option value="8.99">Small</option>
+                            <option value="14.99">Medium</option>
+                            <option value="19.99">Large</option>
                             <option value="25.00">X-Large</option>
                         </select>
                     </div>
                 </div>
-                <div class="card col-lg-3">
+                <div class="card col-lg-3 mt-2">
                     <div class="card-body">
                         <h5 class="card-title">Choose the style of crust you would like</h5>
                         <select name="style" id="pizza-style" class="form-select">
@@ -60,7 +69,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="card col-lg-3">
+                <div class="card col-lg-3 mt-2">
                     <div class="card-body" id="toppings">
                         <h5 class="card-title">Choose the toppings you would like on your pizza</h5>
                         <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms" class="form-check-input">
@@ -88,19 +97,22 @@
                         <label for="anchovies">Anchovies</label>
                     </div>
                 </div>
-                <div class="card col-lg-3">
+                <div class="card col-lg-3 mt-2">
                     <div class="card-body">
                         <h5 class="card-title">Add a Baptism Discount</h5>
-                        <input type="checkbox" id="baptism" name="baptism" value="1">
-                        <label for="baptism">Baptism Discount</label>
+                        <p class="card-text">
+                            Apply the Baptism Discount and instantly get an extra 10% off your current order!
+                        </p>
+                        <div class="form-check form-switch">
+                            <input type="checkbox" id="baptism" name="baptism" value="1" class="form-check-input">
+                            <label for="baptism">Baptism Discount</label>
+
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-warning mt-3" type="submit">Submit Order</button>
+                <button class="btn btn-warning mt-3 mb-5" type="submit">Submit Order</button>
+            </div>
         </form>
-        <div id="final-order">
-
-        </div>
-    </div>
     </div>
 </body>
 

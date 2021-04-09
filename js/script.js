@@ -82,6 +82,13 @@ $(document).ready(function () {
 
         console.log(fullPrice, toppingsToDisplay())
 
-        $("#final-order").text(`Your final price is: $${convertPrice}`);
+        $("#final-order").text(`$${convertPrice}`);
+        $("#final-container").slideDown();
+
+        $("#change-order").click(function (event) {
+            event.preventDefault();
+
+            $("#final-container").slideUp();
+        })
     });
 });
