@@ -5,3 +5,11 @@ function PizzaOrder(pizzaSize, pizzaStyle, pizzaToppings, additionalInstructions
     this.additionalInstructions = additionalInstructions;
 }
 
+let fullPrice = new PizzaOrder("small", "brooklyn", "mushrooms", "none");
+
+PizzaOrder.prototype.pizzaPrice = function () {
+    this.pizzaSize;
+    this.pizzaStyle;
+    this.pizzaToppings;
+    this.additionalInstructions;
+}

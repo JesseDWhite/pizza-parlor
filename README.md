@@ -25,9 +25,12 @@ _{Add your contact information here.}_
 ## Specs
 Describe fullPrice()
 
-Describe pizzaPrice()
-
 Test: it should take in input and spit out a new object called "fullOrder" using the PizzaOrder constructor.
 Code: pizzaPrice("Small", "Brooklyn", "Mushrooms", "none")
-Expected Output: 
+Expected Output: fullPrice
+PizzaOrder {pizzaSize: "small", pizzaStyle: "brooklyn", pizzaToppings: "mushrooms", additionalInstructions: "none"}
+
+
+Describe pizzaPrice()
+
 
