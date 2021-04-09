@@ -49,4 +49,3 @@ Expected Output: 20
 Test: it should now take values from user form and add them together.
 Code: fullPrice.pizzaPrice("small","brooklyn", "mushrooms")
 Expected Output: 2
-

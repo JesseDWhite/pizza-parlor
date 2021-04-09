@@ -1,17 +1,39 @@
 // busines logic--------------------------------------------------------------------------
 
-function PizzaOrder(pizzaSize, pizzaStyle, pizzaToppings, baptismAddOn, additionalInstructions) {
+function PizzaOrder(pizzaSize, pizzaStyle, pizzaToppings, baptismDiscount) {
     this.pizzaSize = pizzaSize;
     this.pizzaStyle = pizzaStyle;
     this.pizzaToppings = pizzaToppings;
-    this.baptismAddOn = baptismAddOn
-    this.additionalInstructions = additionalInstructions;
+    this.baptismDiscount = baptismDiscount
 }
 
-let fullPrice = new PizzaOrder();
-
 PizzaOrder.prototype.pizzaPrice = function () {
-    console.log(parseInt($("#pizza-size").val()) + parseInt($("#pizza-style").val()) + parseInt($("#mushrooms").val()));
+    let price = this.pizzaSize + this.pizzaStyle + this.pizzaToppings;
+    if ($("#mushrooms").is(":checked")) {
+        price += 1
+    }
+    if ($("#olives").is(":checked")) {
+        price += 1
+    }
+    if ($("#onions").is(":checked")) {
+        price += 1
+    }
+    if ($("#pepperoni").is(":checked")) {
+        price += 1
+    }
+    if ($("#pineapple").is(":checked")) {
+        price += 1
+    }
+    if ($("#sausage").is(":checked")) {
+        price += 1
+    }
+    if ($("#bell-peppers").is(":checked")) {
+        price += 1
+    }
+    if ($("#anchovies").is(":checked")) {
+        price += 1
+    }
+    return price;
 }
 
 //user logic------------------------------------------------------------------------------
@@ -20,12 +42,12 @@ $(document).ready(function () {
     $("form").submit(function (event) {
         event.preventDefault();
 
-        const pizzaSizeOrder = parseInt($("#pizza-size").val());
-        const pizzaStyleOrder = parseInt($("#pizza-style").val());
-        const pizzaToppingsOrder = parseInt($("#mushrooms").val());
+        const pizzaSizeOrder = parseFloat($("#pizza-size").val());
+        const pizzaStyleOrder = parseFloat($("#pizza-style").val());
+        const pizzaToppingsOrder = parseFloat($("#mushrooms").val());
 
-        console.log(pizzaSizeOrder, pizzaStyleOrder, pizzaToppingsOrder);
+        let fullPrice = new PizzaOrder(pizzaSizeOrder, pizzaStyleOrder, pizzaToppingsOrder);
 
-        $("#final-order").text(fullPrice.pizzaPrice());
+        $("#final-order").text(`Your final price is: $${fullPrice.pizzaPrice()}`);
     });
 });
