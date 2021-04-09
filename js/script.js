@@ -1,9 +1,10 @@
 // busines logic--------------------------------------------------------------------------
 
-function PizzaOrder(pizzaSize, pizzaStyle, pizzaToppings, additionalInstructions) {
+function PizzaOrder(pizzaSize, pizzaStyle, pizzaToppings, baptismAddOn, additionalInstructions) {
     this.pizzaSize = pizzaSize;
     this.pizzaStyle = pizzaStyle;
     this.pizzaToppings = pizzaToppings;
+    this.baptismAddOn = baptismAddOn
     this.additionalInstructions = additionalInstructions;
 }
 
