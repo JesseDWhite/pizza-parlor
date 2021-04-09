@@ -47,8 +47,9 @@ $(document).ready(function () {
 
         const pizzaSizeOrder = parseFloat($("#pizza-size").val());
         const pizzaStyleOrder = parseFloat($("#pizza-style").val());
-        const pizzaToppingOrder = $("#mushrooms").val();
-        let fullPrice = new PizzaOrder(pizzaSizeOrder, pizzaStyleOrder, pizzaToppingOrder);
+        const pizzaToppingOrder = $("#mushrooms").is(":checked");
+        const baptismDiscountOrder = $("#baptism").is(":checked");
+        let fullPrice = new PizzaOrder(pizzaSizeOrder, pizzaStyleOrder, pizzaToppingOrder, baptismDiscountOrder);
         const convertPrice = fullPrice.pizzaPrice().toFixed(2);
 
         console.log(fullPrice)

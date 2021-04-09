@@ -20,45 +20,59 @@
     <h3><em>"It's the yeast we could do."</em></h3>
     <div class="container">
         <form>
-            <select name="size" id="pizza-size">
-                <option value="5.99">Small</option>
-                <option value="10.99">Medium</option>
-                <option value="18.99">Large</option>
-                <option value="25.00">X-Large</option>
-            </select>
-            <select name="style" id="pizza-style">
-                <option value="2.99">Regular</option>
-                <option value="2.99">Brooklyn</option>
-                <option value="5.99">Thin Crust</option>
-                <option value="7.99">Chicago Thick</option>
-            </select>
-            <div id="toppings">
-                <label for="mushrooms">Mushrooms</label>
-                <input type="checkbox" id="mushrooms" name="mushrooms" value="1">
-                <label for="olives">Olives</label>
-                <input type="checkbox" id="olives" name="olives" value="1">
-                <label for="onions">Onions</label>
-                <input type="checkbox" id="onions" name="onions" value="1">
-                <label for="pepperoni">Pepperoni</label>
-                <input type="checkbox" id="pepperoni" name="pepperoni" value="1">
-                <label for="pineapple">Pineapple</label>
-                <input type="checkbox" id="pineapple" name="pineapple" value="1">
-                <label for="sausage">Sausage</label>
-                <input type="checkbox" id="sausage" name="sausage" value="1">
-                <label for="bell-peppers">Bell Peppers</label>
-                <input type="checkbox" id="bell-peppers" name="bell-peppers" value="1">
-                <label for="anchovies">Anchovies</label>
-                <input type="checkbox" id="anchovies" name="anchovies" value="2">
-            </div>
-            <div>
-                <label for="baptism">Baptism Discount</label>
-                <input type="checkbox" id="baptism" name="baptism" value="1">
-            </div>
-            <button class="btn btn-warning" type="submit">Submit Order</button>
+            <div class="row">
+                <div class="card col-3">
+                    <div class="card-body">
+                        <select name="size" id="pizza-size" class="form-select">
+                            <option value="5.99">Small</option>
+                            <option value="10.99">Medium</option>
+                            <option value="18.99">Large</option>
+                            <option value="25.00">X-Large</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="card col-3">
+                    <div class="card-body">
+                        <select name="style" id="pizza-style" class="form-select">
+                            <option value="2.99">Regular</option>
+                            <option value="2.99">Brooklyn</option>
+                            <option value="5.99">Thin Crust</option>
+                            <option value="7.99">Chicago Thick</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="card col-3">
+                    <div class="card-body">
+                        <label for="mushrooms">Mushrooms</label>
+                        <input type="checkbox" id="mushrooms" name="mushrooms" value="1">
+                        <label for="olives">Olives</label>
+                        <input type="checkbox" id="olives" name="olives" value="1">
+                        <label for="onions">Onions</label>
+                        <input type="checkbox" id="onions" name="onions" value="1">
+                        <label for="pepperoni">Pepperoni</label>
+                        <input type="checkbox" id="pepperoni" name="pepperoni" value="1">
+                        <label for="pineapple">Pineapple</label>
+                        <input type="checkbox" id="pineapple" name="pineapple" value="1">
+                        <label for="sausage">Sausage</label>
+                        <input type="checkbox" id="sausage" name="sausage" value="1">
+                        <label for="bell-peppers">Bell Peppers</label>
+                        <input type="checkbox" id="bell-peppers" name="bell-peppers" value="1">
+                        <label for="anchovies">Anchovies</label>
+                        <input type="checkbox" id="anchovies" name="anchovies" value="2">
+                    </div>
+                </div>
+                <div class="card col-3">
+                    <div class="card-body">
+                        <label for="baptism">Baptism Discount</label>
+                        <input type="checkbox" id="baptism" name="baptism" value="1">
+                    </div>
+                </div>
+                <button class="btn btn-warning mt-3" type="submit">Submit Order</button>
         </form>
         <div id="final-order">
 
         </div>
+    </div>
     </div>
 </body>
 
