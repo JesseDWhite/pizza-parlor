@@ -33,4 +33,11 @@ PizzaOrder {pizzaSize: "small", pizzaStyle: "brooklyn", pizzaToppings: "mushroo
 
 Describe pizzaPrice()
 
+Test: it should take in information from fullPrice() and concat all the items within the object."
+Code: 
+let fullPrice = new PizzaOrder("small", "brooklyn", "mushrooms", "none");
 
+PizzaOrder.prototype.pizzaPrice = function () {
+    this.pizzaSize + this.pizzaStyle + this.pizzaToppings + this.additionalInstructions;
+} return fullPrice
+Espected Output: smallbrookylnmushroomsnone

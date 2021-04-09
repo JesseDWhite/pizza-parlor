@@ -8,8 +8,8 @@ function PizzaOrder(pizzaSize, pizzaStyle, pizzaToppings, additionalInstructions
 let fullPrice = new PizzaOrder("small", "brooklyn", "mushrooms", "none");
 
 PizzaOrder.prototype.pizzaPrice = function () {
-    this.pizzaSize;
-    this.pizzaStyle;
-    this.pizzaToppings;
-    this.additionalInstructions;
+    fullPrice.pizzaSize;
+    fullPrice.pizzaStyle;
+    fullPrice.pizzaToppings;
+    fullPrice.additionalInstructions;
 }
