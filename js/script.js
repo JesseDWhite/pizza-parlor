@@ -8,7 +8,7 @@ function PizzaOrder(pizzaSize, pizzaStyle, pizzaToppings, baptismDiscount) {
 }
 
 PizzaOrder.prototype.pizzaPrice = function () {
-    let price = this.pizzaSize + this.pizzaStyle + this.pizzaToppings;
+    let price = this.pizzaSize + this.pizzaStyle + this.pizzaToppings * this.baptismDiscount;
     if ($("#mushrooms").is(":checked")) {
         price += 1
     }
@@ -33,6 +33,9 @@ PizzaOrder.prototype.pizzaPrice = function () {
     if ($("#anchovies").is(":checked")) {
         price += 1
     }
+    if ($("#baptism").is(":checked")) {
+        price *= .90
+    }
     return price;
 }
 
@@ -45,9 +48,12 @@ $(document).ready(function () {
         const pizzaSizeOrder = parseFloat($("#pizza-size").val());
         const pizzaStyleOrder = parseFloat($("#pizza-style").val());
         const pizzaToppingsOrder = parseFloat($("#mushrooms").val());
+        const baptismDiscountOrder = parseFloat($("#baptism").val());
 
-        let fullPrice = new PizzaOrder(pizzaSizeOrder, pizzaStyleOrder, pizzaToppingsOrder);
+        let fullPrice = new PizzaOrder(pizzaSizeOrder, pizzaStyleOrder, pizzaToppingsOrder, baptismDiscountOrder);
 
-        $("#final-order").text(`Your final price is: $${fullPrice.pizzaPrice()}`);
+        const convertPrice = fullPrice.pizzaPrice().toFixed(2)
+
+        $("#final-order").text(`Your final price is: $${convertPrice}`);
     });
 });
