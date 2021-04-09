@@ -22,3 +22,12 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 _{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
 ## Contact Information
 _{Add your contact information here.}_
+## Specs
+Describe fullPrice()
+
+Describe pizzaPrice()
+
+Test: it should take in input and spit out a new object called "fullOrder" using the PizzaOrder constructor.
+Code: pizzaPrice("Small", "Brooklyn", "Mushrooms", "none")
+Expected Output: 
+

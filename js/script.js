@@ -4,3 +4,4 @@ function PizzaOrder(pizzaSize, pizzaStyle, pizzaToppings, additionalInstructions
     this.pizzaToppings = pizzaToppings;
     this.additionalInstructions = additionalInstructions;
 }
+
