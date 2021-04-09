@@ -8,10 +8,10 @@ function PizzaOrder(pizzaSize, pizzaStyle, pizzaToppings, baptismAddOn, addition
     this.additionalInstructions = additionalInstructions;
 }
 
-let fullPrice = new PizzaOrder("small", "brooklyn", "mushrooms", "none");
+let fullPrice = new PizzaOrder("small", "brooklyn", "mushrooms");
 
 PizzaOrder.prototype.pizzaPrice = function () {
-    return 5 + 5 + 5 + 5;
+    return pizzaSizeOrder + pizzaStyleOrder + pizzaToppingsOrder;
 }
 
 //user logic------------------------------------------------------------------------------
@@ -19,6 +19,11 @@ PizzaOrder.prototype.pizzaPrice = function () {
 $(document).ready(function () {
     $("form").submit(function (event) {
         event.preventDefault();
+
+        const pizzaSizeOrder = parseInt($("#pizza-size").val());
+        const pizzaStyleOrder = parseInt($("#pizza-style").val());
+        const pizzaToppingsOrder = parseInt($("#pizza-toppings").val());
+
 
 
     });

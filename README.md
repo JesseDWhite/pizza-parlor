@@ -45,3 +45,8 @@ Expected Output: smallbrookylnmushroomsnone
 Test: it should return an added value from the selected items instead of concating strings.
 Code: fullPrice.pizzaPrice()
 Expected Output: 20
+
+Test: it should now take values from user form and add them together.
+Code: fullPrice.pizzaPrice("small","brooklyn", "mushrooms")
+Expected Output: 2
+
