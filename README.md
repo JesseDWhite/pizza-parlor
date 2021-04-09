@@ -40,4 +40,8 @@ let fullPrice = new PizzaOrder("small", "brooklyn", "mushrooms", "none");
 PizzaOrder.prototype.pizzaPrice = function () {
     return this.pizzaSize + this.pizzaStyle + this.pizzaToppings + this.additionalInstructions;
 } 
-Espected Output: smallbrookylnmushroomsnone
+Expected Output: smallbrookylnmushroomsnone
+
+Test: it should return an added value from the selected items instead of concating strings.
+Code: fullPrice.pizzaPrice()
+Expected Output: 20

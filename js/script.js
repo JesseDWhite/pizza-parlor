@@ -1,3 +1,5 @@
+// busines logic--------------------------------------------------------------------------
+
 function PizzaOrder(pizzaSize, pizzaStyle, pizzaToppings, additionalInstructions) {
     this.pizzaSize = pizzaSize;
     this.pizzaStyle = pizzaStyle;
@@ -10,3 +12,5 @@ let fullPrice = new PizzaOrder("small", "brooklyn", "mushrooms", "none");
 PizzaOrder.prototype.pizzaPrice = function () {
     return this.pizzaSize + this.pizzaStyle + this.pizzaToppings + this.additionalInstructions;
 }
+
+//user logic------------------------------------------------------------------------------
