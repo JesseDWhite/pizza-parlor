@@ -16,8 +16,35 @@
 </head>
 
 <body>
-    <h1>Chessus Crust Pizzeria and Baptism Clinic</h1>
-    <h3>"It's the yeast we could do."</h3>
+    <h1>Cheessus Crust Pizzeria and Baptism Clinic</h1>
+    <h3><em>"It's the yeast we could do."</em></h3>
+    <div class="container">
+        <form>
+            <select name="size" id="pizza-size">
+                <option value="0">Small</option>
+                <option value="1">Medium</option>
+                <option value="2">Large</option>
+                <option value="3">X-Large</option>
+            </select>
+            <select name="style" id="pizza-style">
+                <option value="0">Regular</option>
+                <option value="1">Brooklyn</option>
+                <option value="2">Thin Crust</option>
+                <option value="3">Chicago Thick</option>
+            </select>
+            <div id="toppings">
+                <label for="mushrooms">Mushrooms</label>
+                <input type="checkbox" id="mushrooms" name="mushrooms" value="1">
+                <label for="olives">Olives</label>
+                <input type="checkbox" id="olives" name="olives" value="1">
+                <label for="onions">Onions</label>
+                <input type="checkbox" id="onions" name="onions" value="1">
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" id="pepperoni" name="pepperoni" value="1">
+            </div>
+            <button class="btn btn-warning" type="submit">Submit Order</button>
+        </form>
+    </div>
 </body>
 
 </html>
