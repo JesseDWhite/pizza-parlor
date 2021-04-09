@@ -85,10 +85,11 @@ $(document).ready(function () {
         $("#final-order").text(`$${convertPrice}`);
         $("#final-container").slideDown();
 
-        $("#change-order").click(function (event) {
+        $("#change-order, #checkout").click(function (event) {
             event.preventDefault();
 
             $("#final-container").slideUp();
         })
+
     });
 });

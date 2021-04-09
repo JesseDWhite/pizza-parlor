@@ -6,6 +6,7 @@ body {
     padding: 5px;
     background-color: #701010;
     box-sizing: border-box;
+    border: #5c0d0d 2px solid;
 }
 .card-title{
     text-align: center;
@@ -32,5 +33,13 @@ body {
 header {
     text-align: center;
 }
+em{
+    font-family: 'Dancing Script', cursive;
+}
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 75px;
+}
+
 
 
