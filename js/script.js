@@ -4,7 +4,7 @@ function PizzaOrder(pizzaSize, pizzaStyle, pizzaToppings, baptismDiscount) {
     this.pizzaSize = pizzaSize;
     this.pizzaStyle = pizzaStyle;
     this.pizzaToppings = pizzaToppings;
-    this.baptismDiscount = baptismDiscount
+    this.baptismDiscount = baptismDiscount;
 }
 
 PizzaOrder.prototype.pizzaPrice = function () {
@@ -45,7 +45,7 @@ $(document).ready(function () {
     $("form").submit(function (event) {
         event.preventDefault();
         function toppingsToDisplay() {
-            let toppingsArray = []
+            let toppingsArray = [];
             if ($("#mushrooms").is(":checked")) {
                 toppingsArray.push($("#mushrooms").val());
             }
