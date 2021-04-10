@@ -1,7 +1,7 @@
 # _pizza-parlor_ 🍕
 #### _This is our fourth week project for oject oriented javascript._
 #### By _Jesse White_
-[Order Some Pizza](https://jessedwhite.github.io/coding-language-survey/)
+[Order Some Pizza](https://jessedwhite.github.io/pizza-parlor/)
 
 ## Technologies Used
 * _HTML_
