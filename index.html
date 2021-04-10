@@ -39,7 +39,16 @@
     </div>
     <div class="container" id="order-page">
         <form>
-            <div class="row">
+            <div class="row justify-content-between">
+                <div class="card" id="checkout-container">
+                    <div class="card-body">
+                        <h3 class="card-title" id="checkout-header">Thank you for placing your order with us.</h3>
+                        <h2 class="card-content"><em>We really kneaded the dough!</em></h2>
+                        <div class="card-content" id="checkout-order">
+
+                        </div>
+                    </div>
+                </div>
                 <div class="card" id="final-container">
                     <div class="card-body">
                         <h5 class="card-title">Your Final Order Price Is</h5>
@@ -113,20 +122,9 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-warning mt-3 mb-5" type="submit">Submit Order</button>
-
+                <button class="btn btn-warning mt-3 mb-5" type="submit" id="submit-order">Submit Order</button>
         </form>
-        <div class="card mb-5" id="checkout-container">
-            <div class="card-body">
-                <h3 class="card-title" id="checkout-header">Thank you for placing your order with us.</h3>
-                <h4 class="card-content"><em>We really kneaded the dough!</em></h4>
-                <div class="card-content" id="checkout-order">
-
-                </div>
-            </div>
-        </div>
     </div>
-
 </body>
 
 </html>

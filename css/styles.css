@@ -17,7 +17,7 @@ body {
 }
 .carousel-item img {
     position: absolute;
-    object-fit:cover;
+    object-fit: cover;
     top: 0;
     left: 0;
     min-height: 100px;
@@ -36,7 +36,7 @@ header {
 em{
     font-family: 'Dancing Script', cursive;
 }
-h1 {
+h1, h3{
     font-family: 'Amatic SC', cursive;
     font-size: 75px;
 }

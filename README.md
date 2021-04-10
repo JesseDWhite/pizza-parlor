@@ -1,27 +1,24 @@
-# _{Application Name}_
-#### _{Brief description of application}_
-#### By _**{List of contributors}**
+# _pizza-parlor_ 🍕
+#### _This is our fourth week project for oject oriented javascript._
+#### By _Jesse White_
 ## Technologies Used
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here
+* _HTML_
+* _CSS_
+* _Javascript_
+* _Bootstrap_
 ## Description
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}
+_Welcome to Cheesus Crust Pizzeria and Baptism Clinic! You can use this web site to place an order from a local pizza restaraunt with multiple options._
 ## Setup/Installation Requirements
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+* _Download all files from this repository_
+* _Open index.html in your browswer once it is downloaded_
+* _You will then be able to build your pizza with the selection fields_
+* _Once you submit the order, you will see your final price_
 ## Known Bugs
-* _Any known issues_
-* _should go here_
+* _No known bugs._
 ## License
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_MIT (c) Jesse White 2021_
 ## Contact Information
-_{Add your contact information here.}_
+Jesse White - _jesse.white6@gmail.com_
 ## Specs
 Describe fullPrice()
 

@@ -1,5 +1,3 @@
-//utilty logic----------------------------------------------------------------------------
-
 // busines logic--------------------------------------------------------------------------
 
 function PizzaOrder(pizzaSize, pizzaStyle, pizzaToppings, baptismDiscount) {
@@ -41,9 +39,6 @@ PizzaOrder.prototype.pizzaPrice = function () {
     return price;
 };
 
-
-
-
 //user logic------------------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -82,9 +77,8 @@ $(document).ready(function () {
         const baptismDiscountOrder = $("#baptism").is(":checked");
 
         let fullPrice = new PizzaOrder(pizzaSizeOrder, pizzaStyleOrder, toppingsToDisplay(), baptismDiscountOrder);
-        const convertPrice = fullPrice.pizzaPrice().toFixed(2);
 
-        console.log(fullPrice, toppingsToDisplay())
+        const convertPrice = fullPrice.pizzaPrice().toFixed(2);
 
         $("#final-order").text(`$${convertPrice}`);
         $("#final-container").slideDown();
@@ -97,10 +91,10 @@ $(document).ready(function () {
         $("#checkout").click(function (event) {
             event.preventDefault();
 
-            $("#checkout-container").show();
             $("#final-container").slideUp();
-            $("#order-page").slideUp();
-
+            $("#checkout-container").slideDown();
+            $("#submit-order").hide();
+            $("#new-order").fadeIn();
         });
     });
 });
